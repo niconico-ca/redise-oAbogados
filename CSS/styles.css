@@ -96,6 +96,14 @@
     height: 600px;
 }
 
+.sub-titulo{
+    text-align: center;
+    margin: 50px;
+    color: rgb(184, 164, 143);
+    font-size: 80px;
+    text-decoration:rgb(184, 164, 143) underline;
+}
+
 .encabezado {
     position: absolute;
     top: 50%; /* Alinea el elemento a la mitad vertical */
