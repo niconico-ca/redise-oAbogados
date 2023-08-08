@@ -23,23 +23,3 @@
     });
 });
 
-const carousel = document.getElementById("carousel");
-let isPaused = false;
-
-carousel.addEventListener("mouseenter", () => {
-  isPaused = true;
-});
-
-carousel.addEventListener("mouseleave", () => {
-  isPaused = false;
-});
-
-function updateCarousel() {
-  if (!isPaused) {
-    carousel.style.animationPlayState = "running";
-  } else {
-    carousel.style.animationPlayState = "paused";
-  }
-}
-
-setInterval(updateCarousel, 100); // Actualizar el estado del carrusel cada 100ms
