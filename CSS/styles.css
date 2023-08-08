@@ -193,3 +193,33 @@
     color: black;
     text-decoration: none; /* Quita el subrayado */
 }
+/*carrusel*/
+.carousel-container {
+    width: px; /* Ajusta el tamaño según tus preferencias */
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .carousel img {
+    width: 80px; /* Ajusta el tamaño según tus preferencias */
+    height: auto;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    16.666%, 33.333%, 50%, 66.666%, 83.333% {
+      transform: translateX(calc(-100% * 5 / 6));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
