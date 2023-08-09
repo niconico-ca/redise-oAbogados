@@ -17,14 +17,14 @@
 
 .navbar a {
     display: block;
-    color: rgb(44, 49, 97);
+    color: #515c71;
     text-align: center;
-    padding: 14px 16px;
+    padding: 35px 16px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: goldenrod;
+    color: #d0b596;
     
 }
 
@@ -44,25 +44,45 @@
     font-family: 'Mochiy Pop One', sans-serif;
     font-family: 'Mochiy Pop P One', sans-serif;
     font-family: 'PT Sans', sans-serif;
-    margin: 10px;
+    margin: 35px;
+    position: absolute;
+    transition: color 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición para el color */
     
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    color: rgb(165, 133, 51);
+    color: #d0b596;
     
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    min-width: 340px;
+    padding: 35px;
+    right: 0; /* Alinea el menú a la derecha */
+    left: auto; /* Alinea el menú a la derecha */
+    transform-origin: top right;
+    animation: fadeInDown 0.5s ease forwards;
+    transform: translateX(0px); /* Desplazamiento inicial */
+    transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición para opacidad y transform */
+    animation: fadeInDown 0.5s ease forwards; /* Animación para aparecer */
+}
+@keyframes fadeInDown {
+    /* ...otros estilos... */
+    from {
+        opacity: 0;
+        transform: translateX(10px) translateY(-10px) scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0) scaleY(1);
+    }
 }
 
 .dropdown-content a {
-    float: right;
     color: black;
-    padding: 12px 16px;
+    padding: 1px 15px;
     text-decoration: none;
     display: block;
     text-align: left;   
@@ -72,6 +92,8 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+    transform: translateX(0); /* Sin desplazamiento */
+    
 }
 
 .logo{
@@ -106,9 +128,9 @@
 .sub-titulo{
     text-align: center;
     margin: 50px;
-    color: rgb(184, 164, 143);
+    color: #d0b596;
     font-size: 80px;
-    text-decoration:rgb(184, 164, 143) underline;
+    text-decoration:#d0b596 underline;
 }
 
 .encabezado {
@@ -146,9 +168,8 @@
     display: flex;
     justify-content:space-around ;
     align-items: center;
-    padding: 20px;
-    width: 100%;
-    margin: 0 auto;
+    
+   
    
 }
 
@@ -160,14 +181,14 @@
 .Cumplimiento-normativo {
     margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
     border-radius: 10px;
-    background-color: rgb(81, 92, 113);
-    padding: 10px;
+    background-color: #515c71;
     flex: 0 0 calc(33.33% - 20px);
-    text-align: center;
-    margin: 10px;
-    padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
 .Económico-Empresarial h2,
@@ -180,7 +201,7 @@
     font-size: 30px;
     margin-bottom: 10px;
     cursor: pointer; /* Cambia el cursor al pasar por encima del encabezado */
-    color: rgb(184, 164, 143);
+    color: #d0b596;
     
 }
 
@@ -212,18 +233,70 @@ marquee img {
     height: auto;
     margin: 0 10px; /* Espacio entre las imágenes */
 }
+.enunciado2{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;    
+    flex-direction: column; /* Alinea los elementos uno debajo del otro */
+    gap: 10px;
+    margin: 0 auto 20px; /* Margen automático en los lados y margen inferior */
+    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+    
+}
+.img-container {
+    flex: 0 0 auto; /* Tamaño automático según el contenido de la imagen */
+    
+}
+
+.content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column; /* Alinea los párrafos hacia la derecha */
+    text-align: right; /* Alinea el texto a la derecha */
+    
+}
+p{
+    right: 0; /* Alinea el menú a la derecha */
+    left: auto; /* Alinea el menú a la derecha */
+    transform-origin: top right;
+    animation: fadeInDown 0.5s ease forwards;
+    transform: translateX(0px); /* Desplazamiento inicial */
+    transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición para opacidad y transform */
+    animation: fadeInDown 0.5s ease forwards; /* Animación para aparecer */
+}
+
+
+@keyframes fadeInDown {
+    /* ...otros estilos... */
+    from {
+        opacity: 0;
+        transform: translateX(10px) translateY(-10px) scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0) scaleY(1);
+    }
+}
+
+
+
 
 .cara1,
 .cara2,
 .cara3,
 .cara4,
 .cara5 {
-  max-width: 50%;
-  max-height: 50%;
-  display: block;
-  margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
 .asociado{
     color: white;
+    text-align: center;
 }
+
+
+
