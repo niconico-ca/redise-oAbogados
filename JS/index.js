@@ -23,6 +23,12 @@
     });
 });
 
+const toggleNavButton = document.getElementById('toggleNav');
+const mainNav = document.getElementById('mainNav');
+
+toggleNavButton.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+});
 
 
 
