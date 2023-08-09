@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+  /* Estilos para la barra de navegación */
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    height: 100px;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: #515c71;
+    text-align: center;
+    padding: 35px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #d0b596;
+    
+}
+
+/* Estilos para los botones desplegables */
+.dropdown {
+    overflow: hidden;
+    
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(85, 65, 65);
+    background-color: inherit;;
+    margin: 35px;
+    position: absolute;
+    transition: color 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición para el color */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #d0b596;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 340px;
+    padding: 35px;
+    right: 0; /* Alinea el menú a la derecha */
+    left: auto; /* Alinea el menú a la derecha */
+    transform-origin: top right;
+    animation: fadeInDown 0.5s ease forwards;
+    transform: translateX(0px); /* Desplazamiento inicial */
+    transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición para opacidad y transform */
+    animation: fadeInDown 0.5s ease forwards; /* Animación para aparecer */
+}
+@keyframes fadeInDown {
+    /* ...otros estilos... */
+    from {
+        opacity: 0;
+        transform: translateX(10px) translateY(-10px) scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0) scaleY(1);
+    }
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;   
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transform: translateX(0); /* Sin desplazamiento */
+    
+}
+
+.logo{
+    height: 100px; 
+    position: absolute;
+    
+    
+}
+.idioma{
+    height: 30px;
+    margin: 0px;
+        
+}
+.bandera{
+    height: 20px;
+    margin: 0px;
+    display: flex;
+    text-align: justify;
+    
+}
+
+.contenedor {
+    margin-left: 350px;
+    background-color: #515c71;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    color: white; /* Agregamos color de texto aquí */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.contenedor h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    
+}
+.contenedor h2 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
