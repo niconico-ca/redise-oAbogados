@@ -7,6 +7,12 @@
     text-decoration: none;
 }
   /* Estilos para la barra de navegación */
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
 .navbar {
     overflow: hidden;
     display: flex;
@@ -19,8 +25,9 @@
     display: block;
     color: #515c71;
     text-align: center;
-    padding: 35px 16px;
+    padding: 15px 20px;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 
 .navbar a:hover {
@@ -30,42 +37,35 @@
 
 /* Estilos para los botones desplegables */
 .dropdown {
-    overflow: hidden;
-    
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
+    display: block;
+  }
+  
+.dropbtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 150px;
+    text-align: center;
+    text-decoration: none;
     border: none;
-    outline: none;
-    color: rgb(85, 65, 65);
-    background-color: inherit;
-    margin: 35px;
-    position: absolute;
-    transition: color 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición para el color */
-    
+    border-radius: 5px;
+    cursor: pointer;
 }
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    color: #d0b596;
-    
+  
+.dropbtn svg,
+.dropbtn i {
+    height: 30px;
 }
-
+  
 .dropdown-content {
     display: none;
-    position: absolute;
-    min-width: 340px;
-    padding: 35px;
-    right: 0; /* Alinea el menú a la derecha */
-    left: auto; /* Alinea el menú a la derecha */
-    transform-origin: top right;
+    min-width: 160px;
     animation: fadeInDown 0.5s ease forwards;
     transform: translateX(0px); /* Desplazamiento inicial */
     transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transición para opacidad y transform */
     animation: fadeInDown 0.5s ease forwards; /* Animación para aparecer */
 }
 @keyframes fadeInDown {
-    /* ...otros estilos... */
+    /* ..otros estilos... */
     from {
         opacity: 0;
         transform: translateX(10px) translateY(-10px) scaleY(0);
@@ -77,26 +77,19 @@
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 1px 15px;
+    display: inline-block;
+    height: 30px;
     text-decoration: none;
-    display: block;
-    text-align: left;   
-}
-
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    transform: translateX(0); /* Sin desplazamiento */
     
-}
+  }
+    
+  /* Mostrar el menú desplegable cuando se pasa el cursor sobre el botón */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .logo{
-    height: 100px; 
-    position: absolute;
-    
-    
+    height: 100px;   
 }
 .idioma{
     height: 30px;
@@ -104,20 +97,97 @@
         
 }
 .bandera{
-    height: 20px;
-    margin: 0px;
+    margin: auto;
+    height: 50px;
+    width: 100%;
     display: flex;
-    text-align: justify;
+    justify-content: center; 
+    
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    background-image: url('../IMG/Logo/f3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Cambiado a viewport height para hacerlo responsive */
+    
+}
+
+#toggleNav{
+    display: none;       
+}
+/* Media query para ajustar la altura en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        height: 100px; /* Reduce la altura en pantallas más pequeñas */
+    }
+    #toggleNav{
+        display: block;
+        padding-right: 10%;
+    }
+    #toggleNav svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    /*.navbar-container{
+        
+    }*/
+    .navbar{
+        position: absolute;
+        left:0%;
+        top: -100%;
+        z-index: -2;
+        transition: top .5s ease,opacity .5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: white;
+        opacity: 0;
+        font-size: 0;
+    }
+
+    .active{
+        font-size: 1.3rem;
+        opacity: 1;
+        z-index: 9;
+        height: 45vh;  
+        left:0%;
+        top:100%;
+        
+    }
+    .dropbtn {
+        padding: 8px 70px;
+        font-size: 14px;
+      }
+    
+      .dropdown-content {
+        min-width: 120px;
+        left: 20px;
+      }
+    
+      .dropdown-content a {
+        height: 50px;
+      }
+      .bandera{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        text-align: justify;  
+    }
+      
     
 }
 
 .contenedor {
-    margin-left: 350px;
+    display: inline-block;
     background-color: #515c71;
     border-radius: 10px;
     text-align: center;
     padding: 20px;
-    max-width: 600px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -128,7 +198,6 @@
     max-height: 200px;
     object-fit: cover;
     margin: 0 auto;
-    border-radius: 5px;
 }
 
 .contenedor h1 {
@@ -137,7 +206,33 @@
 }
 
 .contenedor h2 {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 10px 0;
+    max-height: 150px; /* Ajusta la altura máxima del párrafo según tus necesidades */
+    overflow: auto; /* Agrega desplazamiento interno si el contenido es largo */
+    margin: 5px 0;
+    display: none; /* Oculta los párrafos por defecto */
+    color: white;
 }
+
+
+@media (width < 350px){
+    .contenedor1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.container3 {
+    background-color: #8d7c69; /* Cambia el color de fondo según tu preferencia */
+    padding: 100px; /* Añade espacio entre el contenido y el borde del contenedor */
+}
+
+.fondo2{
+    padding: 20px; /* Añade espacio entre el contenido y el borde del fondo */
+    text-align: center;
+    color: white;
+}
+
+
+

@@ -178,9 +178,12 @@
         display: flex;
         text-align: justify;  
     }
-      
+    
     
 }
+      
+    
+
 
 /*areas*/
 
@@ -205,7 +208,7 @@
     line-height: 8rem;
     font-size: clamp(1.5rem,4vw,6rem);
     text-decoration: underline;
-    color: #d0b596;
+    color: #8d7c69;
 }
 
 /* Encabezado */
@@ -232,7 +235,7 @@
     margin: 2vw; /* Agregamos un margen para separar del borde de la ventana */
     padding: 2vw; /* Agregamos un padding para separar del borde del contenedor */
     box-sizing: border-box; /* El padding se incluirá en el ancho del contenedor */
-    border: 1px solid #ccc;
+    
 }
 
 /* Estilos para las áreas */
@@ -244,11 +247,10 @@
 .Cumplimiento-normativo {
     flex: 0 0 calc(33.33% - 4vw);
     padding: 2vw;
-    border-radius: 1vw;
     flex: 0 0 calc(50% - 2vw); /* Ajusta el ancho en pantallas más pequeñas */
     margin: auto;
     text-align: center;
-    background-color: #515c71;
+    background-color: #ad9e8b3f;
     border: 1px solid #ccc;
     width: 100%;
     
@@ -265,7 +267,8 @@
     font-size: 3vw;
     margin-bottom: 1vw;
     cursor: pointer;
-    color: #d0b596;
+    color: #8d7c69;
+    
 }
 
 /* Párrafos de áreas */
@@ -277,7 +280,7 @@
 .Cumplimiento-normativo p {
     margin: 0.5vw 0;
     display: none;
-    color: white;
+    color: #8d7c69;
     font-size: 1.4rem;
 }
 
@@ -355,7 +358,7 @@ p{
 }
 
 .asociado{
-    color: white;
+    color: #8d7c69;
     text-align: center;
 }
 
@@ -374,8 +377,7 @@ marquee img {
 
 .publicaciones {
     margin-left: 20px;
-    border-radius: 10px;
-    background-color: #736a5f;
+    background-color: #ad9e8b3f;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -413,7 +415,7 @@ marquee img {
 }
 .subt{
     text-align: center;
-    color: white;
+    color: #8d7c69;
     font-size: clamp(.8rem, 1.4vw, 1.4rem);
 }
 .boton {
@@ -426,15 +428,14 @@ marquee img {
     display: inline-block;
     margin-top: 10px;
     cursor: pointer;
-    border-radius: 5px;
     font-size: clamp(.8rem, 1.4vw, 1.4rem);
 }
 .boton:hover {
-   background-color: #515c71;
+   padding: 10px;
    box-shadow: 0px 4px 6px white;
 }
 
-.container3 {
+.container2 {
     background-color: #f0f0f0; /* Cambia el color de fondo según tu preferencia */
     padding: 20px; /* Añade espacio entre el contenido y el borde del contenedor */
 }
@@ -452,7 +453,7 @@ marquee img {
 
 /*form*/
 .tituloform {
-    color: #d0b596;
+    color: #8d7c69;
     margin: 0 auto 20px auto; /* Agregado para ajustar el margen */
 }
 
@@ -511,5 +512,18 @@ input[type="submit"] {
 .logo1{
     height: 150px; 
 }
+
+.container3 {
+    background-color: #8d7c69; /* Cambia el color de fondo según tu preferencia */
+    padding: 20px; /* Añade espacio entre el contenido y el borde del contenedor */
+}
+
+.fondo2{
+    padding: 20px; /* Añade espacio entre el contenido y el borde del fondo */
+    text-align: center;
+    color: white;
+}
+
+
 
 

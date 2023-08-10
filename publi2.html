@@ -5,91 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Edu+SA+Beginner:wght@500&family=Merriweather:ital,wght@1,900&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Merriweather:ital,wght@1,900&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/publi2.css">
     <title>Document</title>
 </head>
 <body>
     <div class="navbar-container">
         <img class="logo" src="IMG/Logo/log2.jpg">
-        <div class="navbar">
-            <a href="#acerca">Acerca</a>
+        <div class="navbar" id="mainNav">
+            <a href="index.html#acerca">Acerca</a>
             <a href="index.html#enunciado">Áreas Prácticas</a>
             <a href="index.html#Equipo">Equipo</a>
             <a href="index.html#publicaciones">Publicaciones</a>
-            <a href="#contacto">Contacto</a>
+            <a href="index.html#contacto">Contacto</a>
             <div class="dropdown">
-                <button class="dropbtn">
-                    <img class="idioma" src="IMG/Logo/translate.svg" alt="">
+                <span class="dropbtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.7em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"/></svg>
                     <i class="fa fa-caret-down"></i>
-                </button>
+                </span>
                 <div class="dropdown-content">
-                    <a href="#" id="espanol" class="active"><img class="bandera" src="IMG/bandera_espana.jpg" alt=""></a>
-                    <a href="#" id="ingles"><img class="bandera" src="IMG/ingles.jpg" alt=""></a>
+                    <a href="#" id="espanol" class="active"><img class="bandera" src="IMG/spañol.png" alt=""></a>
+                    <a href="#" id="ingles"><img class="bandera" src="IMG/ingles.png" alt=""></a>
                 </div>
             </div>
         </div>
+        <div id="toggleNav"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
     </div>
 
      <div class="contenedor">
         <img src="IMG/publis/publi3.jpg" alt="">
         <h1>Ley de defensa de la competencia (27.442)</h1>
-        <h2>Algunas consideraciones prácticas para su entendimiento, a la luz de la reciente reglamentación.<br><br>
+        <p class="parrafo">Algunas consideraciones prácticas para su entendimiento, a la luz de la reciente reglamentación.<br>
 
-            a) La normativa apunta a prevenir y sancionar la cartelizacion del mercado y los abusos de posicion dominante. En consecuencia, se prohiben los acuerdos entre competidos, las concentraciones económicas y todo acto o conducta que tenga por objeto falsear o distorsionar la competencia o el acceso al mercado.<br><br>
+            a) La normativa apunta a prevenir y sancionar la cartelizacion del mercado y los abusos de posicion dominante. En consecuencia, se prohiben los acuerdos entre competidos, las concentraciones económicas y todo acto o conducta que tenga por objeto falsear o distorsionar la competencia o el acceso al mercado.<br>
             
-            b) Las partes: crea la Autoridad Nacional de la Competencia (ANC), organismo descentralizado y autárquico en el ámbito del Poder Ejecutivo Nacional, con sede en la CABA aunque con posibilidad de actuar en todo el ámbito nacional. Dentro de la ANC, funcionarán el Tribunal de Defensa de la Competencia (TDC), la Secretaría de Instrucción de Conductas Anticompetitivas (SICA) y la Secretaría de Concentraciones Económicas (SCE).<br><br>
+            b) Las partes: crea la Autoridad Nacional de la Competencia (ANC), organismo descentralizado y autárquico en el ámbito del Poder Ejecutivo Nacional, con sede en la CABA aunque con posibilidad de actuar en todo el ámbito nacional. Dentro de la ANC, funcionarán el Tribunal de Defensa de la Competencia (TDC), la Secretaría de Instrucción de Conductas Anticompetitivas (SICA) y la Secretaría de Concentraciones Económicas (SCE).<br>
             
             c) Tipifica conductas (prácticas), presumiendo a las mismas como generadoras de un perjuicio al interés económico general (Arts. 2 y 3).
             
-            d) Somete a las disposiciones de la ley tanto a personas físicas como jurídicas, de carácter público y privado, que realicen actividades económicas en el territorio nacional y en el exterior. Para este ultimo caso, las actividades o acuerdos deben producir efectos en el mercado local. Se establece, a los efectos de la ley, que “para determinar la verdadera naturaleza de los actos o conductas y acuerdos, se atenderá a las situaciones y relaciones económicas que efectivamente se realicen, persigan o establezcan” (Art. 4). Quedará ver si la práctica permite arrojar mayores certezas acerca de este enunciado que, a priori, deberá tomarse siguiendo la armonizacion contextual del conjunto jurídico.<br><br>
+            d) Somete a las disposiciones de la ley tanto a personas físicas como jurídicas, de carácter público y privado, que realicen actividades económicas en el territorio nacional y en el exterior. Para este ultimo caso, las actividades o acuerdos deben producir efectos en el mercado local. Se establece, a los efectos de la ley, que “para determinar la verdadera naturaleza de los actos o conductas y acuerdos, se atenderá a las situaciones y relaciones económicas que efectivamente se realicen, persigan o establezcan” (Art. 4). Quedará ver si la práctica permite arrojar mayores certezas acerca de este enunciado que, a priori, deberá tomarse siguiendo la armonizacion contextual del conjunto jurídico.<br>
             
-            e) Brinda una exposicion acabada de (lo que ha de entenderse por, y cómo ha de entenderse) la denominada posición dominante en el mercado (Art. 5) y la concentración económica (Art. 7).
+            e) Brinda una exposicion acabada de (lo que ha de entenderse por, y cómo ha de entenderse) la denominada posición dominante en el mercado (Art. 5) y la concentración económica (Art. 7).<br>
             
-            f) Artículo 9. Notificación previa. Supuestos: ordena que, previo a perfeccionar el acto que pueda implicar una concentración económica (verbigracia, una fusión entre empresas) deberá notificarse a la ANC. Para que quede configurado el supuesto, la suma del volumen de negocio total entre el conjunto de las empresas debe superar las 100 millones de unidades móviles (UM). Dos (2) son los supuestos para los que el Artículo exige, como recaudo previo, la notificacion a la ANC:<br><br>
+            f) Artículo 9. Notificación previa. Supuestos: ordena que, previo a perfeccionar el acto que pueda implicar una concentración económica (verbigracia, una fusión entre empresas) deberá notificarse a la ANC. Para que quede configurado el supuesto, la suma del volumen de negocio total entre el conjunto de las empresas debe superar las 100 millones de unidades móviles (UM). Dos (2) son los supuestos para los que el Artículo exige, como recaudo previo, la notificacion a la ANC:<br>
             
             1) Perfeccionamiento del acto “per se”: los actos tipificados en el Art. 7, como la transferencia del fondo de comercio de una o varias empresas, o una fusión.<br>
             
-            2) Materialización de la toma de control: si bien la ley no lo trata, el Reglamento se encarga de estipular la definicion, indicando que “son todos aquellos actos que, de cualquier forma, de hecho o derecho, otorguen influencia sustancial al adquirente o cualesquiera de los integrantes de su grupo de control sobre el objeto de la operación”.
+            2) Materialización de la toma de control: si bien la ley no lo trata, el Reglamento se encarga de estipular la definicion, indicando que “son todos aquellos actos que, de cualquier forma, de hecho o derecho, otorguen influencia sustancial al adquirente o cualesquiera de los integrantes de su grupo de control sobre el objeto de la operación”.<br>
             
             El reglamento de la ley, por otra parte, ahonda en los supuestos en que debe notificarse con carácter previo. En todos los casos -dispone-, la notificacion sera facultativa para la parte vendedora, aunque el TDC podrá requerir su participación en el trámite.
             
-            Finalmente, la reglamentación estipula que los actos de concentración económica que se concluyan en incumplimiento a lo establecido en el Art. 9, no producirán efectos jurídicos, sin perjuicio de la responsabilidad que pudiera corresponder a las personas físicas o jurídicas que los ordenaron o coadyuvaron en su ejecución.<br><br>
+            Finalmente, la reglamentación estipula que los actos de concentración económica que se concluyan en incumplimiento a lo establecido en el Art. 9, no producirán efectos jurídicos, sin perjuicio de la responsabilidad que pudiera corresponder a las personas físicas o jurídicas que los ordenaron o coadyuvaron en su ejecución.<br>
             
-            g) A pedido de parte, el TDC podrá emitir opiniones consultivas acerca de si un acto encuadra en la obligacion de notificar a la ANC, conforme lo expuesto precedentemente. El decisorio es inapelable. Asimismo, el TDC puede actuar de oficio o ante denuncia del interesado para evaluar si un acto (no notificado) encuadraba en dicha obligacion.<br><br>
+            g) A pedido de parte, el TDC podrá emitir opiniones consultivas acerca de si un acto encuadra en la obligacion de notificar a la ANC, conforme lo expuesto precedentemente. El decisorio es inapelable. Asimismo, el TDC puede actuar de oficio o ante denuncia del interesado para evaluar si un acto (no notificado) encuadraba en dicha obligacion.<br>
             
-            h) El TDC, en todos los casos de notificación previa, deberá decidir por resolución fundada:<br><br>
+            h) El TDC, en todos los casos de notificación previa, deberá decidir por resolución fundada:<br>
             
             Autorizar la operación
             Subordinar el acto al cumplimiento de condiciones, a establecer por la misma autoridad
-            Denegar la autorización.<br><br>
-            Por otro lado, el Art. 14 faculta al TDC a que, previo a tomar una decision, comunique a las partes involucradas sus objeciones y las convoque a una audiencia especial para considerar posibles medidas que mitiguen los efectos (sospechadamente) negativos sobre la competencia.
-            De esta forma, se otorga a las partes la posibilidad de réplica ante la potencialidad o la duda sobre la operación.<br><br>
+            Denegar la autorización.
+            Por otro lado, el Art. 14 faculta al TDC a que, previo a tomar una decision, comunique a las partes involucradas sus objeciones y las convoque a una audiencia especial para considerar posibles medidas que mitiguen los efectos (sospechadamente) negativos sobre la competencia.            
+            De esta forma, se otorga a las partes la posibilidad de réplica ante la potencialidad o la duda sobre la operación.<br>
             
             i) El acceso a la jurisdicción: por fuera de la actuacion de oficio, los interesados en iniciar actuaciones ante la ANC deberán abonar un arancel que “no podrá ser inferior a las 5.000 ni superar las 20.000 UM” (Art. 33). Teniendo en miras que el valor inicial de la UM se establece en 20 pesos (conf. Art. 85), la jurisdicción quedará restringida a un abono mínimo de $100.000. Restará verse cómo se instrumenta esta vía para los particulares o pequeñas empresas que no puedan afrontar el arancel.<br>
             
             j) Algunas cuestiones procedimentales:<br>
-            El procedimiento se inicia de oficio o por denuncia realizada tanto por persopnas físicas como jurídicas, públicas o privadas.<br>
-            La denuncia debe contener los mismos supuestos que los contemplados en el Art. 330 CPCCN.<br>
-            En principio, rige la amplitud probatoria, aunque el TDC debe resolver sobre la procedencia de la prueba, otorgando aquella que fuera pertinente y rechazando la que considere improcedente. Dicho decisorio, es irrecurible, aunque puede plantearse recurso de reconsideración de las medidas de prueba dispuestas en relación a la pertinencia, admisibilidad, idoneidad y conducencia (Art. 42).<br>
-            El TDC puede imponer el cumplimiento de condiciones u ordenar el cese de conductas a los fines de evitar que produzcan un daño. Podrá ordenar las medidas que estime pertinentes para prevenir lesiones al régimen de la competencia (Art. 44). Si bien no se agrega nada mas acerca de esta suerte de medidas cautelares, se aclara que contra la resolucion podrá interponerse recurso de apelación, con efecto devolutivo.<br>
-            El compromiso: hasta (el momento del) dictado de la resolucion por parte del TDC, el presunto responsable puede comprometerse al cese inmediato o gradual de los hechos investigados. Dicho compromiso deberá ser aprobado por el TDC, a los efectos de suspender el procedimiento. Transcurridos 3 años del cumplimiento del compromiso, sin reincidencia, las actuaciones serán archivadas.<br><br>
-            k) El programa de clemencia. Aspectos relevantes: en íntima relación con las recientes modificaciones en materia de compliance y responsabilidad penal empresarial, el Capítulo VIII de la LDC permite que cualquier persona (física o jurídica) que haya incurrido o esté incurriendo en una conducta de las (taxativamente) enumeradas en el Art. 2, pueda revelarla y reconocerla ante el TDC acogiéndose al beneficio de la exención o reducción de las multas. Dicho beneficio podrá solicitarse antes de la notificación a los presuntos responsables de los sumarios iniciados por el TDC.<br><br>
-            Requisitos: para que el beneficio resulte aplicable, quien lo solicite deberá cumplir todos y cada uno de los siguientes requisitos, a saber:<br><br>
+            
+            El procedimiento se inicia de oficio o por denuncia realizada tanto por persopnas físicas como jurídicas, públicas o privadas.
+             
+            La denuncia debe contener los mismos supuestos que los contemplados en el Art. 330 CPCCN.
+             
+            En principio, rige la amplitud probatoria, aunque el TDC debe resolver sobre la procedencia de la prueba, otorgando aquella que fuera pertinente y rechazando la que considere improcedente. Dicho decisorio, es irrecurible, aunque puede plantearse recurso de reconsideración de las medidas de prueba dispuestas en relación a la pertinencia, admisibilidad, idoneidad y conducencia (Art. 42).
+             
+            El TDC puede imponer el cumplimiento de condiciones u ordenar el cese de conductas a los fines de evitar que produzcan un daño. Podrá ordenar las medidas que estime pertinentes para prevenir lesiones al régimen de la competencia (Art. 44). Si bien no se agrega nada mas acerca de esta suerte de medidas cautelares, se aclara que contra la resolucion podrá interponerse recurso de apelación, con efecto devolutivo.
+             
+            El compromiso: hasta (el momento del) dictado de la resolucion por parte del TDC, el presunto responsable puede comprometerse al cese inmediato o gradual de los hechos investigados. Dicho compromiso deberá ser aprobado por el TDC, a los efectos de suspender el procedimiento. Transcurridos 3 años del cumplimiento del compromiso, sin reincidencia, las actuaciones serán archivadas.<br>
+            k) El programa de clemencia. Aspectos relevantes: en íntima relación con las recientes modificaciones en materia de compliance y responsabilidad penal empresarial, el Capítulo VIII de la LDC permite que cualquier persona (física o jurídica) que haya incurrido o esté incurriendo en una conducta de las (taxativamente) enumeradas en el Art. 2, pueda revelarla y reconocerla ante el TDC acogiéndose al beneficio de la exención o reducción de las multas. Dicho beneficio podrá solicitarse antes de la notificación a los presuntos responsables de los sumarios iniciados por el TDC.<br>
+            
+            Requisitos: para que el beneficio resulte aplicable, quien lo solicite deberá cumplir todos y cada uno de los siguientes requisitos, a saber:<br>
             
             1. Exención: ante el supuesto que el TDC no cuente con informacion, el presunto responsable deberá ser el primero entre los involucrados en suministrar dicha información y elementos probatorios. En caso que el TDC haya iniciado previamente una investigación, pero hasta la fecha de presentación de la solicitud no cuente con evidencia suficiente, debe ser el primero entre los involucrados en aportar materia de prueba e información.<br>
             
-            Por lo expuesto, pareceria evidenciarse que el régimen es exclusivo para el primeroque llega. No obstante, el propio capítulo especifica que “el Tribunal de Defensa de la Competencia establecerá un sistema para determinar el orden de prioridad de las solicitudes para acogerse al beneficio establecido en el presente artículo” (Art. 60). Restara ver en la práctica cómo se merituará la prueba y/o información en caso de que sean presentadas por mas de un involucrado, y si la exención podrá hacerse valer cuando los elementos aportados no permitan establecer a ciencia cierta un único beneficiado.<br><br>
+            Por lo expuesto, pareceria evidenciarse que el régimen es exclusivo para el primeroque llega. No obstante, el propio capítulo especifica que “el Tribunal de Defensa de la Competencia establecerá un sistema para determinar el orden de prioridad de las solicitudes para acogerse al beneficio establecido en el presente artículo” (Art. 60). Restara ver en la práctica cómo se merituará la prueba y/o información en caso de que sean presentadas por mas de un involucrado, y si la exención podrá hacerse valer cuando los elementos aportados no permitan establecer a ciencia cierta un único beneficiado.<br>
             
-            2. Cese inmediato en el accionar: el TDC puede pedirle al solicitante del beneficio que cese inmediatamente con su participacion en la practica violatoria, o bien puede, por otro lado, solicitarle que continue con el accionar o conducta violatoria en aquellos casos en que lo estimare conveniente a efectos de preservar la investigación.<br><br>
+            2. Cese inmediato en el accionar: el TDC puede pedirle al solicitante del beneficio que cese inmediatamente con su participacion en la practica violatoria, o bien puede, por otro lado, solicitarle que continue con el accionar o conducta violatoria en aquellos casos en que lo estimare conveniente a efectos de preservar la investigación.<br>
             
-            3. Cooperación plena: continua y diligentemente con el Tribunal de Defensa de la Competencia.<br><br>
+            3. Cooperación plena: continua y diligentemente con el Tribunal de Defensa de la Competencia.<br>
             
-            4. Que no destruya, falsifique u oculte pruebas de la conducta anticompetitiva, ni lo hubiese hecho.<br><br>
+            4. Que no destruya, falsifique u oculte pruebas de la conducta anticompetitiva, ni lo hubiese hecho.<br>
             
             5. Que no divulgue o que no hubiera divulgado o hecho pública la intención de acogerse al beneficio.<br>
             
-            Sin perjuicio de lo expuesto en la exención, antes mentada, se establecen reducciones o beneficios complementarios para quienes aportan información o pruebas de convicción o utilidad adicional a las que ya posea el TDC, siempre y cuando se satisfagan los restantes requisitos enumerados.<br>
+            Sin perjuicio de lo expuesto en la exención, antes mentada, se establecen reducciones o beneficios complementarios para quienes aportan información o pruebas de convicción o utilidad adicional a las que ya posea el TDC, siempre y cuando se satisfagan los restantes requisitos enumerados.
             
             Finalmente, se aclara que el beneficiario del programa de clemencia será igualmente responsable solidariamente ante 1) sus compradores o proveedores directos e indirectos; 2) otras partes perjudicadas, unicamente cuando fuera imposible obtener la plena reparacion del daño producido.<br>
             
@@ -101,8 +111,15 @@
             
             ñ) El reglamento de la ley 27.442 agrega a la Sindicatura General de la Nación y la Auditoría General de la Nación como autoridades de aplicación, “supervisando el accionar de la Autoridad Nacional de la Competencia”.<br>
             
-            Por JULIAN COSSO
-            Abogado (UBA), Diploma de honor y premio al mérito académico, especialista en derecho laboral.</h2>
+            <h1>Por JULIAN COSSO
+                Abogado (UBA), Diploma de honor y premio al mérito académico, especialista en derecho laboral.
+            </h1><br></p>
      </div>
+     <div class="container3">
+        <div class="fondo2">
+            <p>© C&T Abogados</p>
+        </div>
+    </div>
+     <script src="JS/index.js"></script>
 </body>
 </html>
